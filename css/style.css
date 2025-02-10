@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&family=Roboto+Slab:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    width: 100%;
+    min-height: 100vh; /* Высота страницы на 100% высоты экрана */
+}
+
+body{
+    font-family: 'Georgia', serif;
+    background-color: rgb(212, 209, 209);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container{
+    flex-grow: 1; /* Контент будет растягиваться */
+    padding-bottom: 50px; /* Добавляем отступ снизу, чтобы не перекрывать футер */
+
+}
+
+.container p{
+    width: 75%;
+    color: rgb(37, 37, 37);
+    font-size: 35px;
+    margin: auto;
+}
+
+.chien_p{
+    padding-top: 35px;
+    font-size: 20px ;
+}
+
+.logotip_img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    background-color: rgb(108, 106, 106);      
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: start;
+}
+.menu-list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-list li {
+    margin-left: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+}
+
+.menu-list .active a {
+    color: rgb(214, 177, 135);
+    text-decoration: underline;
+}
+
+.menu-list a:hover {
+    color: rgb(37, 35, 35);
+}
+
+.menu-list-login{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-list-login {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menu-list-login li {
+    margin-left: 20px;
+}
+
+.menu-list-login a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 20px;
+}
+
+.menu-list-login .active a {
+    color: rgb(214, 177, 135);
+    text-decoration: underline;
+}
+
+.menu-list-login a:hover {
+    color: rgb(37, 35, 35);
+}
+
+.nature{
+    display: block;
+    margin: 15px auto;
+}
+
+.chien{
+    display: flex;
+    width: 35%;
+    float: left;
+    padding-right: 25px;
+    margin-left: 35px;
+
+}
+
+.wrapper_math{
+    height: 500px;
+    position: relative;
+    flex-grow: 1; /* Контент будет растягиваться */
+    padding-bottom: 50px; /* Добавляем отступ снизу, чтобы не перекрывать футер */
+
+}
+
+.wrapper_math::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/pngegg.png');
+    background-repeat: repeat;
+    background-size: contain;
+    width: 100%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.container_math{
+    text-align: center;
+    background-color: rgb(212, 209, 209);
+    width: 40%;
+    margin: auto;
+    color: rgb(37, 35, 35);
+    padding-top: 35px;
+    
+}
+
+h1,h2{
+    padding-bottom: 25px;
+    text-align: center;
+    color: rgb(37, 35, 35);
+}
+
+input{
+    display: flex;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.enter{
+    font-size: 20px;
+}
+
+button{
+    color: rgb(37, 35, 35);
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button:hover {
+    color: rgb(37, 35, 35);
+}
+
+footer{
+    display: flex;
+    flex-direction: column; /* Расположение элементов в столбик */
+    background: rgb(108, 106, 106);
+    text-align: center;
+    padding: 5px;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0px -4px 15px black;
+    margin-top: auto;
+}
+
+.nav-footer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 25px 10px;
+}
+
+.nav-footer-list{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-footer-list li {
+    margin-left: 20px;
+}
+
+.nav-footer-list a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    
+}
+
+.nav-footer-list a:hover {
+    color: rgb(37, 35, 35);
+}
+
+footer span {
+    position: absolute; /* Абсолютное позиционирование */
+    bottom: 10px;       /* Расстояние от нижнего края футера */
+    right: 20px;        /* Расстояние от правого края футера */
+    font-size: small;
+    }
+
+    ul {
+        list-style-type: none; /* Убираем маркеры списка */
+        padding-left: 0; /* Убираем отступ слева */
+    }
+    
+    li {
+        list-style-type: none; /* Убираем маркеры списка */
+    }
+
+    .footer-date {
+        margin: 10px 0; /* Отступы сверху и снизу */
+        font-size: 14px; /* Размер текста */
+        color: rgb(37, 37, 37); /* Тёмно-серый цвет текста */
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Центрируем кнопки */
+        margin-top: 20px; /* Отступ сверху от текста */
+        gap: 10px; /* Промежуток между кнопками */
+    }
+    
+    .button {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px; /* Внутренние отступы для кнопки */
+        background-color: #979494; /* Светло-серый цвет кнопки */
+        color: rgb(37, 37, 37); /* Цвет текста */
+        text-decoration: none; /* Убираем подчеркивание */
+        font-size: 20px;
+        border-radius: 5px; /* Скругленные углы */
+        border: solid 1px;
+        box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1); /* Тень для кнопки */
+        transition: transform 0.4s ease, background-color 0.2s ease; /* Анимация */
+    }
+    
+    .button:hover {
+        background-color: #c0c0c0; /* Более темный серый при наведении */
+    }
+    
+    .button:active {
+        transform: scale(0.95); /* Уменьшение при клике */
+        background-color: #a9a9a9; /* Ещё темнее при нажатии */
+    }
+    
+     
+
